@@ -1,12 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/gray_500"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/greetings"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_margin="16dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="Good Morning!"
+        android:textColor="@color/gray_100" />
+
+    <TextView
+        android:id="@+id/goal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Drink water"
+        android:textColor="@color/gray_100" />
+
+    <TextView
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Start"
+        android:textColor="@color/blue" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/poppins"
+        android:text="Timer"
+        android:textColor="@color/blue" />
 </LinearLayout>
