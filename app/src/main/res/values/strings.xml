@@ -5,4 +5,8 @@
     <string name="hours_label">h</string>
     <string name="divider">:</string>
     <string name="minutes_label">m</string>
+    <string name="start">Start</string>
+    <string name="quantity_per_timer_label">Quantity per timer</string>
+    <string name="daily_goal">Daily goal</string>
+    <string name="drink_water">Drink Water</string>
 </resources>
