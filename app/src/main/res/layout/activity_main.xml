@@ -203,6 +203,7 @@
                 android:fontFamily="@font/poppins"
                 android:gravity="center"
                 android:hint="@string/timer_hint_text"
+                android:maxLength="2"
                 android:inputType="number"
                 android:textColor="@color/gray_100"
                 android:textColorHint="@color/gray_100"
@@ -237,6 +238,7 @@
                 android:gravity="center"
                 android:hint="@string/timer_hint_text"
                 android:inputType="number"
+                android:maxLength="2"
                 android:textColor="@color/gray_100"
                 android:textColorHint="@color/gray_100"
                 android:textSize="32sp" />
