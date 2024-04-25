@@ -83,108 +83,23 @@
 
         </androidx.cardview.widget.CardView>
 
-        <LinearLayout
+        <include
             android:id="@+id/dailyGoal"
+            layout="@layout/daily_goal_slider"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="27dp"
-            android:orientation="vertical"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/card">
+            app:layout_constraintTop_toBottomOf="@id/card" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="4dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/dailyGoalLabel"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/poppins_medium"
-                    android:text="@string/daily_goal"
-                    android:textColor="@color/blue"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/dailyGoalLiters"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="4dp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/poppins_medium"
-                    android:text="3000ml"
-                    android:textAlignment="viewEnd"
-                    android:textColor="@color/gray_100"
-                    android:textSize="12sp" />
-            </LinearLayout>
-
-            <com.google.android.material.slider.Slider
-                android:id="@+id/dailyGoalSlider"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:value="50"
-                android:valueFrom="0"
-                android:valueTo="100"
-                app:trackColorActive="@color/blue"
-                app:trackColorInactive="@color/gray_200"
-                app:thumbColor="@color/blue"
-                app:trackHeight="6dp" />
-
-        </LinearLayout>
-
-        <LinearLayout
+        <include
             android:id="@+id/quantityPerTimer"
+            layout="@layout/quantity_per_timer_slider"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="27dp"
-            android:orientation="vertical"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/dailyGoal">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="4dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/quantityPerTimerLabel"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/poppins_medium"
-                    android:text="@string/quantity_per_timer_label"
-                    android:textColor="@color/blue"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/quantityPerTimerLiters"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="4dp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/poppins_medium"
-                    android:text="300ml"
-                    android:textAlignment="viewEnd"
-                    android:textColor="@color/gray_100"
-                    android:textSize="12sp" />
-            </LinearLayout>
-
-            <SeekBar
-                android:id="@+id/quantityPerTimerSlider"
-                android:layout_width="match_parent"
-                android:layout_height="6dp"
-                android:max="100"
-                android:progress="50"
-                android:progressBackgroundTint="@color/gray_200"
-                android:progressTint="@color/blue"
-                android:splitTrack="false"
-                android:thumbTint="@color/blue" />
-
-        </LinearLayout>
+            app:layout_constraintTop_toBottomOf="@id/dailyGoal" />
 
         <include
             android:id="@+id/timer"
